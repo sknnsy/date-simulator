@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+		.alisa {
+			background-image: url(defka1.png); 
+			height: 700px; 
+			width: 500px;
+			background-size: 100% 100%;
+			position: absolute;
+		}
+		.lisa {
+			background-image: url(defka2.png); 
+			height: 700px; 
+			background-size: 100% 100%; 
+			position: absolute; 	
+			width: 500px;
+		}
+		.diana {
+			background-image: url(defka3.png); 
+			height: 700px; 
+			background-size: 100% 100%; 
+			position: absolute;
+			width: 500px;
+		}
+		.next {
+			background-image: url(next.png);
+			height: 50px;
+			width: 70px;
+			background-size: 100% 100%;
+			position: absolute;
+			top: 850px;
+			left: 1800px;
+		}
+		.text1 {
+			background-image: url(ramka.jpg);
+			background-size: 100% 100%;
+			height: 120px;
+			width: 240px;
+			position: absolute;
+			display: none;
+			padding: 15px;
+		}
+		.text2 {
+			background-image: url(ramka.jpg);
+			background-size: 100% 100%;
+			height: 140px;
+			width: 240px;
+			position: absolute;
+			display: none;
+			padding: 15px;
+		}
+		.text3 {
+			background-image: url(ramka.jpg);
+			background-size: 100% 100%;
+			height: 160px;
+			width: 240px;
+			position: absolute;
+			display: none;
+			padding: 15px;
+		}
+		.menu-alisa {
+			background-image: url(ramka.jpg);
+			background-size: 100% 100%;
+			height: 180px;
+			width: 240px;
+			position: absolute;
+			display: none;
+			padding: 20px;
+		}
+		.menu-lisa {
+			background-image: url(ramka.jpg);
+			background-size: 100% 100%;
+			height: 180px;
+			width: 240px;
+			position: absolute;
+			display: none;
+			padding: 20px;
+		}
+		.menu-diana {
+			background-image: url(ramka.jpg);
+			background-size: 100% 100%;
+			height: 180px;
+			width: 240px;
+			position: absolute;
+			display: none;
+			padding: 20px;
+		}
+		.alisa1 {
+			background-image: url(defka1.png); 
+			height: 700px; 
+			width: 500px;
+			background-size: 100% 100%;
+			position: absolute;
+		}
+		.lisa1 {
+			background-image: url(defka2.png); 
+			height: 700px; 
+			background-size: 100% 100%; 
+			position: absolute; 	
+			width: 500px;
+		}
+		.diana1 {
+			background-image: url(defka3.png); 
+			height: 700px; 
+			background-size: 100% 100%; 
+			position: absolute;
+			width: 500px;
+		}
+		.alisa2 {
+			background-image: url(defka1.png); 
+			height: 700px; 
+			width: 500px;
+			background-size: 100% 100%;
+			position: absolute;
+		}
+		.lisa2 {
+			background-image: url(defka2.png); 
+			height: 700px; 
+			background-size: 100% 100%; 
+			position: absolute; 	
+			width: 500px;
+		}
+		.diana2 {
+			background-image: url(defka3.png); 
+			height: 700px; 
+			background-size: 100% 100%; 
+			position: absolute;
+			width: 500px;
+		}
+		.dialogue {
+			background-image: url(dialogue.png);
+			background-size: 100% 100%;
+			position: absolute;
+			height: 300px;
+			width: 350px;
+		}
+		.dialogue2 {
+			background-image: url(dialogue.png);
+			background-size: 100% 100%;
+			position: absolute;
+			height: 300px;
+			width: 400px;
+		}
+		.dialogue3 {
+			background-image: url(dialogue.png);
+			background-size: 100% 100%;
+			position: absolute;
+			height: 350px;
+			width: 550px;
+		}
+	</style>
+</head>
+<body>
+	<div style="background-image: url(1.jpg); background-size: 100% 100%; height: 945px;" class="col-12 first">
+		<div class="col-6" style="margin-right: auto; margin-left: auto; padding-top: 80px;"><h1 class="text-center text-dark">Симулятор свиданий</h1></div>
+		<div style="height: 100px; position: absolute; top: 350px; left: 820px; width: 250px;">
+			<div class="bg-success rounded-pill" style="height: 80px; width: 250px;">
+				<h1 class="text-center pt-2 start">Начать</h1>;
+			</div>
+		</div>
+	</div>
+	<div style="background-image: url(1.jpg); background-size: 100% 100%; height: 945px; display: none;" class="col-12 second">
+		<div class="col-12 d-flex">
+			<div class="col-6" style="margin-right: auto; margin-left: auto; padding-top: 80px;"><h1 class="text-center">Нажмите на персонажей чтобы узнать о них.</h1></div>
+			<div class="alisa" style="top: 240px; left: 100px;"></div>
+			<div class="text1 rounded" style="top: 550px; left: 230px;"><p style="text-align: center;">Hi, это я алиса, я недавно приехала учиться из Америки по обмену, надеюсь мы подружимся)</p></div>
+			<div class="lisa" style="top: 240px; left: 700px;"></div>
+			<div class="text2 rounded" style="top: 550px; left: 820px;"><p style="text-align: center;">Привет, меня зовут Лиза, мы всё ещё соседи уже как 10 лет. P.s: это Лиза мы с ней друзья детства ещё с 5 лет</p></div>
+			<div class="diana" style=" top: 140px; left: 1300px;"></div>
+			<div class="text3 rounded" style="top: 550px; left: 1440px;"><p style="text-align: center;">Я не хочу иметь дело с тобой! P.s: это крикливая девушка моя одноклассница и можно сказать что мы друзья, но видимо только я так считаю</p></div>
+		</div>
+		<div class="next"></div>
+	</div>
+	<div style="background-size: 100% 100%; background-image: url(2.jpg); height: 945px; display: none;" class="col-12 third">
+		<div class="col-12 d-flex">
+			<div class="col-6" style="margin-right: auto; margin-left: auto; padding-top: 80px;"><h1 class="text-center">Нажмите на персонажей</h1></div>
+			<div class="alisa1" style="top: 240px; left: 100px;"></div>
+			<div class="menu-alisa rounded" style="top: 550px; left: 230px;">
+				<div><h2 class="text-center pt-0">Алиса</h2></div>
+				<div class="col-9 pl-0 pr-0"><p>Очки любви:<span class="scoreAlisa">0</span></p></div>
+				<div style="height: 30px; width: 240px;"><button class="btn-success text-center btn1 rounded-pill" style="height: 30px; width: 90px;">Ухаживать</button></div>
+				<button class="btn-danger text-center btn11 rounded-pill" style="height: 30px; width: 200px; margin-top: 5px;">Позвать на свидание(10)</button>
+			</div>
+			<div class="lisa1" style="top: 240px; left: 700px;"></div>
+			<div class="menu-lisa rounded" style="top: 550px; left: 820px;">
+				<div><h2 class="text-center pt-0">Лиза</h2></div>
+				<div class="col-9 pl-0 pr-0"><p>Очки любви:<span class="scoreLisa">0</span></p></div>
+				<div style="height: 30px; width: 240px;"><button class="btn-success text-center btn2 rounded-pill" style="height: 30px; width: 90px;">Ухаживать</button></div>
+				<button class="btn-danger text-center btn22 rounded-pill" style="height: 30px; width: 200px; margin-top: 5px;">Позвать на свидание(15)</button>
+			</div>
+			<div class="diana1" style=" top: 140px; left: 1300px;"></div>
+			<div class="menu-diana rounded" style="top: 550px; left: 1440px;">
+				<div><h2 class="text-center pt-0">Диана</h2></div>
+				<div class="col-9 pl-0 pr-0"><p>Очки любви:<span class="scoreDiana">0</span></p></div>
+				<div style="height: 30px; width: 240px;"><button class="btn-success text-center btn3 rounded-pill" style="height: 30px; width: 90px;">Ухаживать</button></div>
+				<button class="btn-danger text-center btn33 rounded-pill" style="height: 30px; width: 200px; margin-top: 5px;">Позвать на свидание(20)</button>
+			</div>
+		</div>
+	</div>
+	<div style="background-size: 100% 100%; background-image: url(3.jpg); height: 945px; display: none;" class="col-12 fourth">
+		<div class="col-12">
+			<div class="alisa2" style="top: 240px; left: 810px;"></div>
+			<div class="dialogue" style="top: 80px; left: 1150px;"><h2 class="text-center" style="padding-top: 77px; padding-left: 10px;">Thank you за этот прекрасный день!*поцелуй*</h2></div>
+		</div>
+	</div>
+	<div style="background-size: 100% 100%; background-image: url(4.jpg); height: 945px; display: none;" class="col-12 fourth2">
+		<div class="col-12">
+			<div class="lisa2" style="top: 240px; left: 610px;"></div>
+			<div class="dialogue2" style="top: 80px; left: 950px;"><h3 class="text-center" style="padding-top: 85px; padding-left: 10px;">Благодарю за хорошую компанию!*поцелуй*</h3></div>
+		</div>
+	</div>
+	<div style="background-size: 100% 100%; background-image: url(5.png); height: 945px; display: none;" class="col-12 fourth3">
+		<div class="col-12">
+			<div class="diana2" style="top: 240px; left: 810px;"></div>
+			<div class="dialogue3" style="top: 80px; left: 1150px;"><h3 class="text-center" style="padding-top: 120px; padding-left: 50px; padding-right: 50px;">Не то чтобы мне понравилось, но всё равно *поцелуй*</h3></div>
+		</div>
+	</div>
+	<div style="background-image: url(1.jpg); background-size: 100% 100%; height: 945px; display: none;" class="col-12 final">
+		<div class="col-12" style="padding-top: 300px;"><h1 class="text-center">Вы прошли игру!</h1></div>
+		<div class="col-12"><h2 class="text-center">Чтобы начать заново перезагрузите страницу</h2></div>
+	</div>
+
+	<script type="text/javascript">
+		let start = document.querySelector('.start');
+		let first = document.querySelector('.first');
+		let third = document.querySelector('.third');
+		let second = document.querySelector('.second');
+		let fourth = document.querySelector('.fourth');
+		let fourth2 = document.querySelector('.fourth2');
+		let fourth3 = document.querySelector('.fourth3');
+		let final = document.querySelector('.final');
+		let alisa = document.querySelector('.alisa');
+		let lisa = document.querySelector('.lisa');
+		let diana = document.querySelector('.diana');
+		let next = document.querySelector('.next');
+		let text1 = document.querySelector('.text1');
+		let text2 = document.querySelector('.text2');
+		let text3 = document.querySelector('.text3');
+		let menuAlisa = document.querySelector('.menu-alisa');
+		let menuLisa = document.querySelector('.menu-lisa');
+		let menuDiana = document.querySelector('.menu-diana');
+		let alisa1 = document.querySelector('.alisa1');
+		let lisa1 = document.querySelector('.lisa1');
+		let diana1 = document.querySelector('.diana1');
+		let btn1 = document.querySelector('.btn1');
+		let btn2 = document.querySelector('.btn2');
+		let btn3 = document.querySelector('.btn3');
+		let btn11 = document.querySelector('.btn11');
+		let btn22 = document.querySelector('.btn22');
+		let btn33 = document.querySelector('.btn33');
+		let alisa2 = document.querySelector('.alisa2');
+		let lisa2 = document.querySelector('.lisa2');
+		let diana2 = document.querySelector('.diana2');
+
+		let vanish = function() {
+			fourth.style.display = 'none';
+			final.style.display = 'block';
+		}
+		let vanish2 = function() {
+			fourth2.style.display = 'none';
+			final.style.display = 'block';
+		}
+		let vanish3 = function() {
+			fourth3.style.display = 'none';
+			final.style.display = 'block';
+		}
+		start.onclick = function() {
+			first.style.display = 'none';
+			second.style.display = 'block';
+		}
+		alisa.onclick = function() {
+			text1.style.display = 'block';
+		}
+		lisa.onclick = function() {
+			text2.style.display = 'block';
+		}
+		diana.onclick = function() {
+			text3.style.display = 'block'
+		}
+		next.onclick = function() {
+			second.style.display = 'none';
+			third.style.display = 'block';
+		}
+		alisa1.onclick = function() {
+			menuAlisa.style.display = 'block';
+		}
+		lisa1.onclick = function() {
+			menuLisa.style.display = 'block';
+		}
+		diana1.onclick = function() {
+			menuDiana.style.display = 'block'
+		}
+		let getRandom = function() { 
+       		let rand = Math.random() * 10;
+        	let round = Math.round(rand);
+        	return round;
+   	 	}
+		let score1 = 0;
+		let scoreAlisa = document.querySelector('.scoreAlisa');
+		scoreAlisa.innerHTML = score1;
+		btn1.onclick = function() {
+			score1 = score1 + 5;
+			scoreAlisa.innerHTML = score1;
+		}
+		let score2 = 0;
+		let scoreLisa = document.querySelector('.scoreLisa');
+		scoreLisa.innerHTML = score2;
+		btn2.onclick = function() {
+			score2 = score2 + 2;
+			scoreLisa.innerHTML = score2;
+		}
+		let score3 = 0;
+		let scoreDiana = document.querySelector('.scoreDiana');
+		scoreDiana.innerHTML = score3;
+		btn3.onclick = function() {
+			score3 = score3 + 1;
+			scoreDiana.innerHTML = score3;
+		}
+		btn11.onclick = function() {
+			let randNum1 = getRandom();
+			score1 = score1 - 10;
+			scoreAlisa.innerHTML = score1;
+			if(randNum1 == 1 || randNum1 == 2 || randNum1 == 3 || randNum1 == 4 || randNum1 == 5 || randNum1 == 0) {
+				alert('Успешно, Алиса согласилась!');
+				third.style.display = 'none';
+				fourth.style.display = 'block';
+				setTimeout(vanish, 5000)
+			}
+			else {
+				alert('Провал, она отказалась');
+			}
+		}
+		btn22.onclick = function() {
+			let randNum1 = getRandom();
+			score2 = score2 - 15;
+			scoreLisa.innerHTML = score2;
+			if(randNum1 == 1 || randNum1 == 2 || randNum1 == 3) {
+				alert('Успешно, Лиза согласилась!');
+				third.style.display = 'none';
+				fourth2.style.display = 'block';
+				setTimeout(vanish2, 5000)
+
+			}
+			else {
+				alert('Провал, она отказалась');
+			}
+		}
+		btn33.onclick = function() {
+			let randNum1 = getRandom();
+			score3 = score3 - 20;
+			scoreDiana.innerHTML = score3;
+			if(randNum1 == 1 || randNum1 == 2) {
+				alert('Успешно, Диана согласилась!');
+				third.style.display = 'none';
+				fourth3.style.display = 'block';
+				setTimeout(vanish3, 5000)
+
+			}
+			else {
+				alert('Провал, она отказалась');
+			}
+		}
+	</script>
+</body>
+</html>
